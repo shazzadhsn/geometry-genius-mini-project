@@ -9,8 +9,7 @@ document
 
         // calculating area
         let triangleArea = 0.5 * triangleBase * triangleHeight;
-        let areaString = triangleArea.toString();
-        let triangleAreaString = "Triangle Area: " + areaString;
+        let triangleAreaString = "Triangle Area: " + triangleArea.toString();
         let li = document.createElement("li");
         li.innerText = triangleAreaString;
         document.getElementById("ordered-list").appendChild(li);
@@ -29,8 +28,7 @@ document
 
         // calculating rectangle area
         let rectangleArea = rectangleWidth * rectangleLength;
-        let areaString = rectangleArea.toString();
-        let rectangleAreaString = "Rectangle Area: " + areaString;
+        let rectangleAreaString = "Rectangle Area: " + rectangleArea.toString();
         let li = document.createElement("li");
         li.innerText = rectangleAreaString;
         document.getElementById("ordered-list").appendChild(li);
@@ -52,8 +50,8 @@ document
 
         // calculating parallelogram area
         let parallelogramArea = parallelogramBase * parallelogramHeight;
-        let areaString = parallelogramArea.toString();
-        let parallelogramAreaString = "Parallelogram Area: " + areaString;
+        let parallelogramAreaString =
+            "Parallelogram Area: " + parallelogramArea.toString();
         let li = document.createElement("li");
         li.innerText = parallelogramAreaString;
         document.getElementById("ordered-list").appendChild(li);
@@ -64,19 +62,37 @@ document
 // adding event to rhombus
 document
     .getElementById("rhombus-button")
-    .addEventListener("click", function() {
-        let rhombusD1 = document.getElementById('rhombus-diagonal1').value;
-        let rhombusD2 = document.getElementById('rhombus-diagonal2').value;
+    .addEventListener("click", function () {
+        let rhombusD1 = document.getElementById("rhombus-diagonal1").value;
+        let rhombusD2 = document.getElementById("rhombus-diagonal2").value;
         rhombusD1 = parseFloat(rhombusD1);
         rhombusD2 = parseFloat(rhombusD2);
 
         // calculating rhombus area
         let rhombusArea = 0.5 * rhombusD1 * rhombusD2;
-        let areaString = rhombusArea.toString();
-        let rhombusAreaString = "Rhombus Area: " + areaString;
-        let li = document.createElement('li');
+        let rhombusAreaString = "Rhombus Area: " + rhombusArea.toString();
+        let li = document.createElement("li");
         li.innerText = rhombusAreaString;
-        document.getElementById('ordered-list').appendChild(li);
-        document.getElementById('rhombus-diagonal1').value = '';
-        document.getElementById('rhombus-diagonal2').value = '';
+        document.getElementById("ordered-list").appendChild(li);
+        document.getElementById("rhombus-diagonal1").value = "";
+        document.getElementById("rhombus-diagonal2").value = "";
+    });
+
+// adding event to ellipse
+document
+    .getElementById("ellipse-button")
+    .addEventListener("click", function () {
+        let axisA = document.getElementById("axis-a").value;
+        let axisB = document.getElementById("axis-b").value;
+        axisA = parseFloat(axisA);
+        axisB = parseFloat(axisB);
+
+        // calculating area
+        let ellipseArea = Math.PI * axisA * axisB;
+        let ellipseAreaString = "Ellipse Area: " + ellipseArea.toString();
+        let li = document.createElement("li");
+        li.innerText = ellipseAreaString;
+        document.getElementById("ordered-list").appendChild(li);
+        document.getElementById("axis-a").value = "";
+        document.getElementById("axis-b").value = "";
     });

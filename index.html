@@ -171,6 +171,8 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Pentagon Card -->
                     <div class="card bg-base-100 w-96 shadow-sm">
                         <figure class="px-10 pt-10">
                             <img
@@ -203,6 +205,8 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Ellipse Card -->
                     <div class="card bg-base-100 w-96 shadow-sm">
                         <figure class="px-10 pt-10">
                             <img
@@ -213,23 +217,25 @@
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title">Ellipse</h2>
-                            <p>Area (A) = 0.5 X b X h</p>
+                            <p>Area (A) = π * a * b</p>
                             <div>
                                 <input
+                                    id="axis-a"
                                     class="w-24 p-2 text-2xl rounded-md"
                                     type="text"
-                                    placeholder="b"
+                                    placeholder="axis-a"
                                 />
                                 <span class="mr-4 ml-2">cm</span>
                                 <input
+                                    id="axis-b"
                                     class="w-24 p-2 text-2xl rounded-md"
                                     type="text"
-                                    placeholder="h"
+                                    placeholder="axis-b"
                                 />
                                 <span class="mr-4 ml-2">cm</span>
                             </div>
                             <div class="card-actions w-full">
-                                <button class="btn btn-primary w-full">
+                                <button id="ellipse-button" class="btn btn-primary w-full">
                                     Calculate
                                 </button>
                             </div>
