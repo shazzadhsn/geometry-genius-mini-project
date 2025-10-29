@@ -48,12 +48,17 @@
                                 <span class="mr-4 ml-2">cm</span>
                             </div>
                             <div class="card-actions w-full">
-                                <button id="triangle-button" class="btn btn-primary w-full">
+                                <button
+                                    id="triangle-button"
+                                    class="btn btn-primary w-full"
+                                >
                                     Calculate
                                 </button>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Rectangle Card -->
                     <div class="card bg-base-100 w-96 shadow-sm">
                         <figure class="px-10 pt-10">
                             <img
@@ -64,7 +69,7 @@
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title">Rectangle</h2>
-                            <p>Area (A) = 0.5 X b X h</p>
+                            <p>Area (A) = w X l</p>
                             <div>
                                 <input
                                     id="rectangle-width"
@@ -82,12 +87,17 @@
                                 <span class="mr-4 ml-2">cm</span>
                             </div>
                             <div class="card-actions w-full">
-                                <button id="rectangle-button" class="btn btn-primary w-full">
+                                <button
+                                    id="rectangle-button"
+                                    class="btn btn-primary w-full"
+                                >
                                     Calculate
                                 </button>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Parallelogram Card -->
                     <div class="card bg-base-100 w-96 shadow-sm">
                         <figure class="px-10 pt-10">
                             <img
@@ -98,15 +108,17 @@
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title">Parallelogram</h2>
-                            <p>Area (A) = 0.5 X b X h</p>
+                            <p>Area (A) = b X h</p>
                             <div>
                                 <input
+                                    id="parallelogram-base"
                                     class="w-24 p-2 text-2xl rounded-md"
                                     type="text"
                                     placeholder="b"
                                 />
                                 <span class="mr-4 ml-2">cm</span>
                                 <input
+                                    id="parallelogram-height"
                                     class="w-24 p-2 text-2xl rounded-md"
                                     type="text"
                                     placeholder="h"
@@ -114,12 +126,17 @@
                                 <span class="mr-4 ml-2">cm</span>
                             </div>
                             <div class="card-actions w-full">
-                                <button class="btn btn-primary w-full">
+                                <button
+                                    id="parallelogram-button"
+                                    class="btn btn-primary w-full"
+                                >
                                     Calculate
                                 </button>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Rhombus Card -->
                     <div class="card bg-base-100 w-96 shadow-sm">
                         <figure class="px-10 pt-10">
                             <img
@@ -130,23 +147,25 @@
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title">Rhombus</h2>
-                            <p>Area (A) = 0.5 X b X h</p>
+                            <p>Area (A) = 0.5 X d1 X d2</p>
                             <div>
                                 <input
+                                    id="rhombus-diagonal1"
                                     class="w-24 p-2 text-2xl rounded-md"
                                     type="text"
-                                    placeholder="b"
+                                    placeholder="d1"
                                 />
                                 <span class="mr-4 ml-2">cm</span>
                                 <input
+                                    id="rhombus-diagonal2"
                                     class="w-24 p-2 text-2xl rounded-md"
                                     type="text"
-                                    placeholder="h"
+                                    placeholder="d2"
                                 />
                                 <span class="mr-4 ml-2">cm</span>
                             </div>
                             <div class="card-actions w-full">
-                                <button class="btn btn-primary w-full">
+                                <button id="rhombus-button" class="btn btn-primary w-full">
                                     Calculate
                                 </button>
                             </div>
@@ -222,9 +241,7 @@
                 <div class="w-96 border-2 border-gray-200 rounded-md p-4">
                     <h3 class="text-3xl text-center p-4">Area Calculation</h3>
                     <section id="area-list">
-                        <ol id="ordered-list">
-
-                        </ol>
+                        <ol id="ordered-list"></ol>
                     </section>
                 </div>
             </div>
