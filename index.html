@@ -33,6 +33,7 @@
                             <p>Area (A) = 0.5 X b X h</p>
                             <div>
                                 <input
+                                    onclick=""
                                     id="triangle-base"
                                     class="w-24 p-2 text-2xl rounded-md"
                                     type="text"
@@ -47,8 +48,14 @@
                                 />
                                 <span class="mr-4 ml-2">cm</span>
                             </div>
+                            <div id="spans" class="text-xl">
+                                <span>Area:</span>
+                                <span id="triangle-area-span"></span>
+                                <span>cm<sup>2</sup></span>
+                            </div>
                             <div class="card-actions w-full">
                                 <button
+                                    onclick="calculateTriangleArea()"
                                     id="triangle-button"
                                     class="btn btn-primary w-full"
                                 >
@@ -86,8 +93,14 @@
                                 />
                                 <span class="mr-4 ml-2">cm</span>
                             </div>
+                            <div id="spans" class="text-xl">
+                                <span>Area:</span>
+                                <span id="rectangle-area-span"></span>
+                                <span>cm<sup>2</sup></span>
+                            </div>
                             <div class="card-actions w-full">
                                 <button
+                                    onclick="calculateRectangleArea()"
                                     id="rectangle-button"
                                     class="btn btn-primary w-full"
                                 >
@@ -125,8 +138,14 @@
                                 />
                                 <span class="mr-4 ml-2">cm</span>
                             </div>
+                            <div id="spans" class="text-xl">
+                                <span>Area:</span>
+                                <span id="parallelogram-area-span"></span>
+                                <span>cm<sup>2</sup></span>
+                            </div>
                             <div class="card-actions w-full">
                                 <button
+                                    onclick="calculateParallelogramArea()"
                                     id="parallelogram-button"
                                     class="btn btn-primary w-full"
                                 >
@@ -164,8 +183,17 @@
                                 />
                                 <span class="mr-4 ml-2">cm</span>
                             </div>
+                            <div id="spans" class="text-xl">
+                                <span>Area:</span>
+                                <span id="rhombus-area-span"></span>
+                                <span>cm<sup>2</sup></span>
+                            </div>
                             <div class="card-actions w-full">
-                                <button id="rhombus-button" class="btn btn-primary w-full">
+                                <button
+                                    onclick="calculateRhombusArea()"
+                                    id="rhombus-button"
+                                    class="btn btn-primary w-full"
+                                >
                                     Calculate
                                 </button>
                             </div>
@@ -186,20 +214,27 @@
                             <p>Area (A) = 0.5 X b X h</p>
                             <div>
                                 <input
+                                    id="pentagon-base"
                                     class="w-24 p-2 text-2xl rounded-md"
                                     type="text"
                                     placeholder="b"
                                 />
                                 <span class="mr-4 ml-2">cm</span>
                                 <input
+                                    id="pentagon-height"
                                     class="w-24 p-2 text-2xl rounded-md"
                                     type="text"
                                     placeholder="h"
                                 />
                                 <span class="mr-4 ml-2">cm</span>
                             </div>
+                            <div id="spans" class="text-xl">
+                                <span>Area:</span>
+                                <span id="pentagon-area-span"></span>
+                                <span>cm<sup>2</sup></span>
+                            </div>
                             <div class="card-actions w-full">
-                                <button class="btn btn-primary w-full">
+                                <button onclick="calculatePentagonArea()" class="btn btn-primary w-full">
                                     Calculate
                                 </button>
                             </div>
@@ -234,8 +269,17 @@
                                 />
                                 <span class="mr-4 ml-2">cm</span>
                             </div>
+                            <div id="spans" class="text-xl">
+                                <span>Area:</span>
+                                <span id="ellipse-area-span"></span>
+                                <span>cm<sup>2</sup></span>
+                            </div>
                             <div class="card-actions w-full">
-                                <button id="ellipse-button" class="btn btn-primary w-full">
+                                <button
+                                    onclick="calculateEllipseArea()"
+                                    id="ellipse-button"
+                                    class="btn btn-primary w-full"
+                                >
                                     Calculate
                                 </button>
                             </div>
@@ -254,6 +298,7 @@
         </main>
         <footer></footer>
 
-        <script src="./scripts/script.js"></script>
+        <!-- <script src="./scripts/script.js"></script> -->
+        <script src="./scripts/script2.js"></script>
     </body>
 </html>
